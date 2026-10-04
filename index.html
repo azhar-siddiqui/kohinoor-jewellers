@@ -1,0 +1,776 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kohinoor Jewellers | Fine Jewellery by Asad Patel, Phulambri</title>
+    <meta
+      name="description"
+      content="Kohinoor Jewellers in Phulambri, Maharashtra. Bespoke, hallmarked fine jewellery curated by Asad Patel. Book a private consultation."
+    />
+    <meta name="theme-color" content="#111111" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Sans+Devanagari:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <a href="#collections" class="skip-link" data-i18n="skip"
+      >Skip to content</a
+    >
+
+    <!-- ===================== A. HEADER ===================== -->
+    <header class="site-header" id="header">
+      <div class="container nav">
+        <a
+          href="#top"
+          class="logo logo--stacked"
+          aria-label="Kohinoor Jewellers, home"
+          ><span class="logo__main">KOHINOOR</span
+          ><span class="logo__sub">Jewellers</span></a
+        >
+
+        <nav aria-label="Primary">
+          <ul class="nav__links">
+            <li>
+              <a href="#collections" data-i18n="nav_collections">Collections</a>
+            </li>
+            <li><a href="#story" data-i18n="nav_story">Our Story</a></li>
+            <li><a href="#gallery" data-i18n="nav_gallery">The Gallery</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav__actions">
+          <button
+            class="lang-toggle"
+            type="button"
+            data-lang-toggle
+            aria-label="Switch language"
+          >
+            मराठी
+          </button>
+          <a
+            href="#contact"
+            class="btn btn--ghost btn--sm nav__cta"
+            data-i18n="cta_book"
+            >Book Appointment</a
+          >
+          <button
+            class="burger"
+            id="burger"
+            type="button"
+            aria-expanded="false"
+            aria-controls="drawer"
+            aria-label="Open menu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile drawer -->
+    <div class="drawer" id="drawer" aria-hidden="true">
+      <button
+        class="drawer__close"
+        id="drawer-close"
+        type="button"
+        aria-label="Close menu"
+      >
+        <span></span><span></span>
+      </button>
+      <a class="drawer__link" href="#collections" data-i18n="nav_collections"
+        >Collections</a
+      >
+      <a class="drawer__link" href="#story" data-i18n="nav_story">Our Story</a>
+      <a class="drawer__link" href="#gallery" data-i18n="nav_gallery"
+        >The Gallery</a
+      >
+      <a class="drawer__link" href="#contact" data-i18n="nav_contact"
+        >Contact</a
+      >
+      <a href="#contact" class="btn btn--solid" data-i18n="cta_book"
+        >Book Appointment</a
+      >
+      <button
+        class="lang-toggle"
+        type="button"
+        data-lang-toggle
+        aria-label="Switch language"
+      >
+        मराठी
+      </button>
+    </div>
+
+    <main id="top">
+      <!-- ===================== B. HERO ===================== -->
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media">
+          <div class="media">
+            <img
+              src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1600&q=80"
+              alt="Diamond and gold necklace resting on dark fabric"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+
+        <div class="hero__content">
+          <h1 id="hero-title" class="reveal-load">
+            <span data-i18n="hero_title_a">Timeless Elegance,</span>
+            <em data-i18n="hero_title_b">Crafted for Generations.</em>
+          </h1>
+          <p class="hero__sub reveal-load" data-i18n="hero_sub">
+            Discover bespoke, curated fine jewelry by Asad Patel at Kohinoor
+            Jewellers.
+          </p>
+          <div class="hero__ctas reveal-load">
+            <a href="#collections" class="btn btn--solid" data-i18n="hero_cta1"
+              >Explore Collections</a
+            >
+            <a href="#story" class="btn btn--ghost" data-i18n="hero_cta2"
+              >Our Legacy</a
+            >
+          </div>
+        </div>
+
+        <a
+          href="#collections"
+          class="scroll-indicator"
+          aria-label="Scroll to collections"
+        >
+          <span class="mouse" aria-hidden="true"></span>
+          <span data-i18n="scroll">Scroll</span>
+        </a>
+      </section>
+
+      <!-- ===================== C. COLLECTIONS ===================== -->
+      <section
+        class="section"
+        id="collections"
+        aria-labelledby="collections-title"
+      >
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 id="collections-title" data-i18n="col_title">
+              Curated Collections
+            </h2>
+            <p data-i18n="col_sub">
+              Four ways into the shop, each made to be worn, kept and handed
+              down.
+            </p>
+          </div>
+
+          <div class="collections-grid">
+            <a href="#contact" class="card reveal" style="--d: 0s">
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1000&q=80"
+                  alt="Gold bridal ring set with diamonds"
+                />
+              </div>
+              <div class="card__body">
+                <h3 data-i18n="col1_t">The Bridal Suite</h3>
+                <p data-i18n="col1_d">
+                  Necklace sets, bangles and rings for the wedding day.
+                </p>
+                <span class="card__link" data-i18n="col_link"
+                  >View Collection →</span
+                >
+              </div>
+            </a>
+            <a href="#contact" class="card reveal" style="--d: 0.1s">
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1000&q=80"
+                  alt="Minimal gold chain necklace"
+                />
+              </div>
+              <div class="card__body">
+                <h3 data-i18n="col2_t">Modern Minimalist</h3>
+                <p data-i18n="col2_d">
+                  Light chains and studs for everyday wear.
+                </p>
+                <span class="card__link" data-i18n="col_link"
+                  >View Collection →</span
+                >
+              </div>
+            </a>
+            <a href="#contact" class="card reveal" style="--d: 0.2s">
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1000&q=80"
+                  alt="Handcrafted bespoke gold jewellery"
+                />
+              </div>
+              <div class="card__body">
+                <h3 data-i18n="col3_t">Bespoke Gold</h3>
+                <p data-i18n="col3_d">Designed with you, then made by hand.</p>
+                <span class="card__link" data-i18n="col_link"
+                  >View Collection →</span
+                >
+              </div>
+            </a>
+            <a href="#contact" class="card reveal" style="--d: 0.3s">
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=1000&q=80"
+                  alt="Stack of polished gold rings"
+                />
+              </div>
+              <div class="card__body">
+                <h3 data-i18n="col4_t">Heirloom Rings</h3>
+                <p data-i18n="col4_d">
+                  Classic bands and solitaires built to last.
+                </p>
+                <span class="card__link" data-i18n="col_link"
+                  >View Collection →</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== D. STORY ===================== -->
+      <section
+        class="section section--alt"
+        id="story"
+        aria-labelledby="story-title"
+      >
+        <div class="container story">
+          <div class="story__media reveal">
+            <div class="media">
+              <img
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1000&q=80"
+                alt="Jeweller's hands shaping fine gold"
+              />
+            </div>
+          </div>
+
+          <div class="story__text reveal" style="--d: 0.15s">
+            <h2 id="story-title" data-i18n="story_title">The Kohinoor Story</h2>
+            <p data-i18n="story_p1">
+              Kohinoor Jewellers began with a simple idea: jewellery is bought
+              once and remembered for decades, so the shop behind it must earn
+              that trust.
+            </p>
+            <p data-i18n="story_p2">
+              Asad Patel curates every piece himself. He chooses the gold,
+              checks the stones and sits with each family to understand what the
+              piece is for, whether a wedding, a birth or a promise.
+            </p>
+            <div class="values">
+              <div>
+                <h3 data-i18n="v1_t">Legacy</h3>
+                <p data-i18n="v1_d">Pieces made to be passed on.</p>
+              </div>
+              <div>
+                <h3 data-i18n="v2_t">Purity</h3>
+                <p data-i18n="v2_d">Honest metal, openly weighed and tested.</p>
+              </div>
+              <div>
+                <h3 data-i18n="v3_t">Trust</h3>
+                <p data-i18n="v3_d">Clear prices and a word that holds.</p>
+              </div>
+            </div>
+            <p class="story__sign">
+              Asad Patel<small data-i18n="owner"
+                >Owner, Kohinoor Jewellers</small
+              >
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== E. GALLERY ===================== -->
+      <section class="section" id="gallery" aria-labelledby="gallery-title">
+        <div class="container">
+          <div class="section__head reveal">
+            <h2 id="gallery-title" data-i18n="gal_title">The Lookbook</h2>
+            <p data-i18n="gal_sub">
+              Look closely. Select any image to see the finish and detail up
+              close.
+            </p>
+          </div>
+
+          <div class="gallery" id="gallery-grid">
+            <button
+              class="gallery__item reveal"
+              type="button"
+              style="--ar: 4/5"
+              data-caption="Diamond solitaire in a gold setting"
+              data-full="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1800&q=85"
+              aria-label="Open image: Diamond solitaire in a gold setting"
+            >
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=75"
+                  alt="Diamond solitaire in a gold setting"
+                />
+              </div>
+            </button>
+            <button
+              class="gallery__item reveal"
+              type="button"
+              style="--ar: 1/1; --d: 0.08s"
+              data-caption="Layered gold necklaces"
+              data-full="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1800&q=85"
+              aria-label="Open image: Layered gold necklaces"
+            >
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=75"
+                  alt="Layered gold necklaces"
+                />
+              </div>
+            </button>
+            <button
+              class="gallery__item reveal"
+              type="button"
+              style="--ar: 3/4; --d: 0.16s"
+              data-caption="Hand-finished gold jewellery"
+              data-full="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1800&q=85"
+              aria-label="Open image: Hand-finished gold jewellery"
+            >
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=75"
+                  alt="Hand-finished gold jewellery"
+                />
+              </div>
+            </button>
+            <button
+              class="gallery__item reveal"
+              type="button"
+              style="--ar: 5/4"
+              data-caption="Diamond necklace on dark velvet"
+              data-full="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1800&q=85"
+              aria-label="Open image: Diamond necklace on dark velvet"
+            >
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=700&q=75"
+                  alt="Diamond necklace on dark velvet"
+                />
+              </div>
+            </button>
+            <button
+              class="gallery__item reveal"
+              type="button"
+              style="--ar: 4/5; --d: 0.08s"
+              data-caption="Stacked polished gold rings"
+              data-full="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=1800&q=85"
+              aria-label="Open image: Stacked polished gold rings"
+            >
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=700&q=75"
+                  alt="Stacked polished gold rings"
+                />
+              </div>
+            </button>
+            <button
+              class="gallery__item reveal"
+              type="button"
+              style="--ar: 1/1; --d: 0.16s"
+              data-caption="The craftsman at work"
+              data-full="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1800&q=85"
+              aria-label="Open image: The craftsman at work"
+            >
+              <div class="media">
+                <img
+                  loading="lazy"
+                  src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=75"
+                  alt="The craftsman at work"
+                />
+              </div>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== F. CONTACT ===================== -->
+      <section
+        class="section section--alt"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="container contact">
+          <div class="contact__info reveal">
+            <h2 id="contact-title" data-i18n="con_title">Visit the Boutique</h2>
+            <p data-i18n="con_sub">
+              Choose a time and we will keep the shop quiet for you. Tell us
+              what you are looking for and we will have pieces ready.
+            </p>
+            <div class="details">
+              <div>
+                <h3 data-i18n="con_addr_t">Address</h3>
+                <p>Kohinoor Jewellers<br />Phulambri, Maharashtra</p>
+              </div>
+              <div>
+                <h3 data-i18n="con_visit_t">Visits</h3>
+                <p data-i18n="con_visit_d">
+                  By appointment, so each guest gets our full attention.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="form reveal"
+            id="appointment-form"
+            style="--d: 0.15s"
+            novalidate
+          >
+            <div class="form__row">
+              <div class="field">
+                <label for="name" data-i18n="f_name">Full name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  autocomplete="name"
+                  required
+                />
+                <span class="field__error" data-i18n="err_name"
+                  >Please enter your name.</span
+                >
+              </div>
+              <div class="field">
+                <label for="phone" data-i18n="f_phone">Phone number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  inputmode="tel"
+                  required
+                  pattern="[0-9+\s\-]{8,15}"
+                />
+                <span class="field__error" data-i18n="err_phone"
+                  >Please enter a valid phone number.</span
+                >
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field" id="interest-field">
+                <label for="interest-btn" data-i18n="f_interest"
+                  >I am interested in</label
+                >
+                <div class="cs__anchor">
+                  <button
+                    type="button"
+                    class="cs__btn"
+                    id="interest-btn"
+                    aria-haspopup="listbox"
+                    aria-expanded="false"
+                    aria-controls="interest-list"
+                  >
+                    <span class="cs__value is-placeholder" id="interest-value"
+                      >Choose a collection</span
+                    >
+                    <svg
+                      class="cs__icon cs__chevron"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <path d="M6 9l6 6 6-6" />
+                    </svg>
+                  </button>
+                  <ul
+                    class="cs__list"
+                    id="interest-list"
+                    role="listbox"
+                    tabindex="-1"
+                    aria-labelledby="interest-btn"
+                  >
+                    <li
+                      class="cs__option"
+                      role="option"
+                      id="opt-bridal"
+                      data-value="bridal"
+                      data-i18n="col1_t"
+                    >
+                      The Bridal Suite
+                    </li>
+                    <li
+                      class="cs__option"
+                      role="option"
+                      id="opt-minimalist"
+                      data-value="minimalist"
+                      data-i18n="col2_t"
+                    >
+                      Modern Minimalist
+                    </li>
+                    <li
+                      class="cs__option"
+                      role="option"
+                      id="opt-bespoke"
+                      data-value="bespoke"
+                      data-i18n="col3_t"
+                    >
+                      Bespoke Gold
+                    </li>
+                    <li
+                      class="cs__option"
+                      role="option"
+                      id="opt-rings"
+                      data-value="rings"
+                      data-i18n="col4_t"
+                    >
+                      Heirloom Rings
+                    </li>
+                  </ul>
+                </div>
+                <input type="hidden" id="interest" name="interest" required />
+                <span class="field__error" data-i18n="err_interest"
+                  >Please choose a collection.</span
+                >
+              </div>
+              <div class="field" id="date-field">
+                <label for="date-btn" data-i18n="f_date">Preferred date</label>
+                <div class="cs__anchor">
+                  <button
+                    type="button"
+                    class="cs__btn"
+                    id="date-btn"
+                    aria-haspopup="dialog"
+                    aria-expanded="false"
+                    aria-controls="date-pop"
+                  >
+                    <span class="cs__value is-placeholder" id="date-value"
+                      >Select a date</span
+                    >
+                    <svg
+                      class="cs__icon"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                    >
+                      <rect x="3.5" y="5" width="17" height="15.5" rx="2" />
+                      <path d="M3.5 10h17M8 3v4M16 3v4" />
+                    </svg>
+                  </button>
+                  <div
+                    class="dp__pop"
+                    id="date-pop"
+                    role="dialog"
+                    aria-label="Choose a date"
+                    tabindex="-1"
+                  >
+                    <div class="dp__head">
+                      <button
+                        type="button"
+                        class="dp__nav"
+                        id="dp-prev"
+                        aria-label="Previous month"
+                      >
+                        &#8249;
+                      </button>
+                      <div
+                        class="dp__title"
+                        id="dp-title"
+                        aria-live="polite"
+                      ></div>
+                      <button
+                        type="button"
+                        class="dp__nav"
+                        id="dp-next"
+                        aria-label="Next month"
+                      >
+                        &#8250;
+                      </button>
+                    </div>
+                    <table
+                      class="dp__table"
+                      role="grid"
+                      aria-labelledby="dp-title"
+                    >
+                      <thead>
+                        <tr id="dp-head"></tr>
+                      </thead>
+                      <tbody id="dp-body"></tbody>
+                    </table>
+                    <div class="dp__foot">
+                      <button
+                        type="button"
+                        class="dp__link"
+                        id="dp-clear"
+                        data-i18n="cal_clear"
+                      >
+                        Clear
+                      </button>
+                      <button
+                        type="button"
+                        class="dp__link"
+                        id="dp-today"
+                        data-i18n="cal_today"
+                      >
+                        Today
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" id="date" name="date" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="message" data-i18n="f_msg"
+                >Tell us about the piece you have in mind</label
+              >
+              <textarea id="message" name="message" rows="3"></textarea>
+            </div>
+            <label
+              for="company-hp"
+              class="visually-hidden"
+              style="display: none"
+              >Do not fill this field</label
+            >
+            <input
+              id="company-hp"
+              class="hp"
+              type="text"
+              name="company"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            />
+            <button type="submit" class="btn btn--solid" data-i18n="f_submit">
+              Request Exclusive Consultation
+            </button>
+            <output
+              class="form__status"
+              id="form-status"
+              aria-live="polite"
+            ></output>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== G. FOOTER ===================== -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a href="#top" class="logo">KOHINOOR</a>
+            <p data-i18n="foot_tag">
+              Fine jewellery for the moments families remember.
+            </p>
+          </div>
+          <ul class="social" aria-label="Social channels">
+            <li>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3.5" y="3.5" width="17" height="17" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.2" cy="6.8" r="1" class="dot" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.pinterest.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Pinterest"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path
+                    d="M10.5 20.5 12.2 13M9.6 13.2c-1.200-2.800.6-5.700 3.300-5.700 2.100 0 3.300 1.400 3.300 3.100 0 2.300-1.300 4-3 4-.9 0-1.600-.6-1.500-1.500"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M14 21v-8h2.700l.4-3H14V8.200c0-.9.3-1.500 1.600-1.500h1.600V4.100C16.900 4 16 4 15 4c-2.300 0-3.900 1.400-3.900 4v2H8.500v3h2.600v8"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            © <span id="year">2026</span> Kohinoor Jewellers.
+            <span data-i18n="rights">All rights reserved.</span>
+          </p>
+          <p class="credit" data-i18n="credit">
+            Bespoke curation by Asad Patel.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <dialog
+      class="lightbox"
+      id="lightbox"
+      aria-modal="true"
+      aria-label="Image viewer"
+      aria-hidden="true"
+    >
+      <button
+        class="lightbox__btn lightbox__close"
+        type="button"
+        aria-label="Close image"
+      >
+        &times;
+      </button>
+      <button
+        class="lightbox__btn lightbox__prev"
+        type="button"
+        aria-label="Previous image"
+      >
+        &#8249;
+      </button>
+      <figure class="lightbox__figure">
+        <img class="lightbox__img" id="lightbox-img" src="" alt="" />
+        <figcaption
+          class="lightbox__caption"
+          id="lightbox-caption"
+        ></figcaption>
+      </figure>
+      <button
+        class="lightbox__btn lightbox__next"
+        type="button"
+        aria-label="Next image"
+      >
+        &#8250;
+      </button>
+    </dialog>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
